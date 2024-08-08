@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaksi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <center><h1>PAW-PAW</h1>
+			<h2>meet the cat's needs </h2></center>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">PRODUK</a></li>
+            <li><a href="transaksi.html">TRANSAKSI</a></li>
+            <li><a href="invoice.html">INVOICE</a></li>
+            <li><a href="kontak.html">KONTAK KAMI</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <aside class="left">
+			<br>
+			<center>
+				PROMO!
+			</center>
+			<hr>
+			<ul>
+				<li> SETIAP PEMBELIAN ME-O GRATIS ONGKIR SELURUH INDONESIA</li>
+				<li> PEMBAYARAN COD TERSEDIA BAGI SELURUH PEMBELI WHISKAS </li>
+				<li> BELI ME-O 2 PACK 7KG GRATIS WHISKAS MINIPACK 150GR</li>
+				<li> POTONGAN HARGA UP TO 90% BAGI PANTI KUCING DISELURUH INDONESIA</li>
+			</ul>
+			<center>
+				PROMO!
+			</center>
+			<hr>
+			<ul>
+				<li> SETIAP PEMBELIAN ME-O GRATIS ONGKIR SELURUH INDONESIA</li>
+				<li> PEMBAYARAN COD TERSEDIA BAGI SELURUH PEMBELI WHISKAS </li>
+				<li> BELI ME-O 2 PACK 7KG GRATIS WHISKAS MINIPACK 150GR</li>
+				<li> POTONGAN HARGA UP TO 90% BAGI PANTI KUCING DISELURUH INDONESIA</li>
+			</ul>
+        </aside>
+        <main class="form-transaksi">
+            <CENTER><h2>Formulir Transaksi</h2></CENTER>
+            <form id="transaksiForm">
+                <label for="nama">Nama :</label><br>
+                <input type="text" id="nama" name="nama"><br><br>
+                <label for="nohp">No Handphone:</label><br>
+                <input type="text" id="nohp" name="nohp"><br><br>
+                <label for="produk">Produk :</label><br>
+                <input type="text" id="produk" name="produk"><br><br>
+                <label for="jumlah">Jumlah :</label><br>
+                <input type="number" id="jumlah" name="jumlah"><br><br>
+                <label for="pengambilan">Pengambilan  :</label><br>
+                <div>
+                    <input type="radio" id="ambil" name="cargo" value="AMBIL (Gratis ongkir)">
+                    <label for="ambil">AMBIL</label>
+                </div>
+                <div>
+                    <input type="radio" id="antar" name="cargo" value="Antar (ongkir 20.000)">
+                    <label for="antar">ANTAR</label>
+                </div><br><br>
+                <button type="button" onclick="submitTransaksi()">Buat Pesanan</button>  
+                <button type="reset" onclick="beli(' ', 0)">Reset</button>
+            </form>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+<footer>
+    <marquee behavior="" direction="right">"Fawnia Fikrah Rizkidya"</marquee>
+</footer>
+</html>
